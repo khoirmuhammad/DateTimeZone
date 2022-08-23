@@ -6,7 +6,7 @@ So user B will get wrong date time information, He / She should get "2022-08-23 
 
 ##Here are 2 ways to deal with these issues
 ### A. Storing Epoch Time / Timestamps
-We will get milliseconds value from 1 Januari 1970 00:00:00 - Datetime.UtcNow. After that we will insert the milliseconds value into long data type
+We will get milliseconds value from 1 Januari 1970 00:00:00 - Datetime.UtcNow. After that we will insert the milliseconds value into long data type. In other word the data stored in database is based on UTC time
 
 ```
 long utcStoreMilliseconds = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
@@ -29,3 +29,26 @@ Notes : Finally we get local datetime
 
 ### B. Storing Actual Datetime and its Timezone
 For example Datetime "2022-08-23 19:00:00" Timezone "SE Standard Time" (South East Standard Time)
+
+Basically user able to insert data from Jakarta / Singapore / UK / USA and able to retrieve from many countries as well
+
+```
+datetime = DateTime.Now;
+zoneId = TimeZoneInfo.Local.Id;
+```
+Notes : Storing Datetime and Timezone ID to database
+
+```
+string origZoneId = zoneId;
+DateTime origDatetime = (DateTime)datetime;
+
+DateTime utcDatetime = TimeZoneInfo.ConvertTimeBySystemTimeZoneId(DateTime.SpecifyKind(origDatetime, DateTimeKind.Unspecified), origZoneId, "UTC");
+```
+Notes : Retrieving data from database and convert the datetime in particular timezone into UTC timezone
+
+```
+DateTime dateInLocalZone = TimeZoneInfo.ConvertTimeFromUtc(utcDatetime, TimeZoneInfo.Local);
+
+Console.WriteLine($"Date Time in Local / Current Timezone - {dateInLocalZone}");
+```
+Notes : Then converting datetime UTC into user timezone
