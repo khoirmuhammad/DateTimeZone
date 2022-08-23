@@ -1,0 +1,15 @@
+D:\Me\Research\DateTimeZone\DateTimeZone\bin\Debug\net6.0\DateTimeZone.exe
+D:\Me\Research\DateTimeZone\DateTimeZone\bin\Debug\net6.0\DateTimeZone.deps.json
+D:\Me\Research\DateTimeZone\DateTimeZone\bin\Debug\net6.0\DateTimeZone.runtimeconfig.json
+D:\Me\Research\DateTimeZone\DateTimeZone\bin\Debug\net6.0\DateTimeZone.dll
+D:\Me\Research\DateTimeZone\DateTimeZone\bin\Debug\net6.0\DateTimeZone.pdb
+D:\Me\Research\DateTimeZone\DateTimeZone\obj\Debug\net6.0\DateTimeZone.csproj.AssemblyReference.cache
+D:\Me\Research\DateTimeZone\DateTimeZone\obj\Debug\net6.0\DateTimeZone.GeneratedMSBuildEditorConfig.editorconfig
+D:\Me\Research\DateTimeZone\DateTimeZone\obj\Debug\net6.0\DateTimeZone.AssemblyInfoInputs.cache
+D:\Me\Research\DateTimeZone\DateTimeZone\obj\Debug\net6.0\DateTimeZone.AssemblyInfo.cs
+D:\Me\Research\DateTimeZone\DateTimeZone\obj\Debug\net6.0\DateTimeZone.csproj.CoreCompileInputs.cache
+D:\Me\Research\DateTimeZone\DateTimeZone\obj\Debug\net6.0\DateTimeZone.dll
+D:\Me\Research\DateTimeZone\DateTimeZone\obj\Debug\net6.0\refint\DateTimeZone.dll
+D:\Me\Research\DateTimeZone\DateTimeZone\obj\Debug\net6.0\DateTimeZone.pdb
+D:\Me\Research\DateTimeZone\DateTimeZone\obj\Debug\net6.0\DateTimeZone.genruntimeconfig.cache
+D:\Me\Research\DateTimeZone\DateTimeZone\obj\Debug\net6.0\ref\DateTimeZone.dll
